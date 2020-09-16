@@ -52,7 +52,6 @@ extension StyledList<E> on List<Widget> {
     AlignmentGeometry alignment = AlignmentDirectional.topStart,
     TextDirection textDirection,
     StackFit fit = StackFit.loose,
-    Clip clip = Clip.clip,
     List<Widget> children = const <Widget>[],
   }) =>
       Stack(
@@ -60,7 +59,6 @@ extension StyledList<E> on List<Widget> {
         alignment: alignment,
         textDirection: textDirection,
         fit: fit,
-        clipBehavior: clip ?? Clip.none,
         children: this,
       );
 }
