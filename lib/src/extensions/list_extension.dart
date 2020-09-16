@@ -60,7 +60,7 @@ extension StyledList<E> on List<Widget> {
         alignment: alignment,
         textDirection: textDirection,
         fit: fit,
-        clipBehavior: clip,
+        clipBehavior: clip ?? Clip.none,
         children: this,
       );
 }
